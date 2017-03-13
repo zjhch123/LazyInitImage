@@ -9,13 +9,13 @@
 
 > 在任意位置引入`js`文件
 
-```javascript
+```html
 <script src="LazyInit.js"></script>
 ```
 
 > 在`body`后面添加标签
 
-```javascript
+```html
 <script>
   LazyInit();
 </script>
