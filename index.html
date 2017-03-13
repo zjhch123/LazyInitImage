@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<script src="LazyInit.js"></script>
+<style>
+* {
+    box-sizing: border-box;
+}
+.empty {
+    height: 1000px;
+}
+.container {
+    width: 1000px;
+    border: 1px solid red;
+    margin: 0 auto;
+    zoom: 1;
+}
+.container:before, .container:after {
+    display: table;
+    content: '';
+}
+.container:after {
+    clear: both;
+}
+.item {
+    height: 300px;
+    width: 33.3%;
+    float: left;
+    border: 1px solid blue;
+    overflow: hidden;
+}
+.item.big {
+    width: 66.7%;
+}
+.item img {
+    background: gray;
+    height: 100%;
+}
+</style>
+</head>
+<body>
+    <div class="empty">
+        <h1>请向下滚动</h1>
+    </div>
+    <div class="container">
+        <div class="item">
+            <img data-original="https://image.hduzplus.xyz/image/1489413000976.png" src="" class="J_lazyload"/>
+        </div>
+        <div class="item big">
+            <img data-original="https://image.hduzplus.xyz/image/1489413044807.png" src="" class="J_lazyload"/>
+        </div>
+        <div class="item">
+            <img data-original="https://image.hduzplus.xyz/image/1489413072141.png" src="" class="J_lazyload"/>
+        </div>
+        <div class="item">
+            <img data-original="https://image.hduzplus.xyz/image/1489413136759.png" src="" class="J_lazyload"/>
+        </div>
+        <div class="item">
+            <img data-original="https://image.hduzplus.xyz/image/1489413190397.png" src="" class="J_lazyload"/>
+        </div>
+    </div>
+</body>
+<script>
+LazyInit();
+</script>
+</html>
+
+
+
